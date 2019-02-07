@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My first Vue</title>
+    <script src="https://unpkg.com/vue"></script>
+  </head>
+  <body>
+    <h1>Vue.js</h1>
+    <div id="app">
+      {{ message.toUpperCase() }}
+    </div>
+    <hr />
+    <button onclick="clickAction();">click</button>
+
+    <script>
+      var data = {
+        message: "Hello world!",
+        items: ["one", "two", "three"]
+      };
+      var app = new Vue({
+        el: "#app",
+        data: data,
+        render: h => {
+          return h("div", [
+            h("p", { style: "font-size:20pt;" }, data.message),
+            h("ol", data.items.map(item => h("li", item)))
+          ]);
+        }
+      });
+
+      function clickAction() {
+        data.message = "変換しました!!";
+        data.items = ["1", "2", "3"];
+      }
+    </script>
+  </body>
+</html>
