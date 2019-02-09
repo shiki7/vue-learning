@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My first Vue</title>
+    <script src="https://unpkg.com/vue"></script>
+  </head>
+  <body>
+    <style>
+      .ok {
+        font-size: 24pt;
+        color: blue;
+        padding: 5px 10px;
+        border: 2px solid red;
+      }
+      .ng {
+        font-size: 20pt;
+        color: gray;
+      }
+    </style>
+    <h1>Vue.js</h1>
+    <div id="app">
+      <!-- タグを表示させたくない場合はtemplateタグを使う （React.Fragmentみたいなやつ）-->
+      <p v-if="flag" class="ok">
+        正常
+      </p>
+      <p v-else class="ng">
+        異常
+      </p>
+    </div>
+    <button onclick="doAction()">
+      Click
+    </button>
+    <script>
+      var data = {
+        flag: true
+      };
+
+      var app = new Vue({
+        el: "#app",
+        data: data
+      });
+
+      function doAction() {
+        data.flag = !data.flag;
+      }
+    </script>
+  </body>
+</html>
