@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My first Vue</title>
+    <script src="https://unpkg.com/vue"></script>
+  </head>
+  <body>
+    <h1>Vue.js</h1>
+    <div id="app">
+      <hello />
+    </div>
+    <script>
+      Vue.component('hello',{
+        data: ()=>{
+          return {
+            message: '変数渡しテスト'
+          };
+        },
+        template: '<p class="hello">{{message}}</p>'
+      })
+
+      var app = new Vue({
+        el: '#app'
+      });
+    </script>
+  </body>
+</html>

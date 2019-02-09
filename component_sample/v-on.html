@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My first Vue</title>
+    <script src="https://unpkg.com/vue"></script>
+  </head>
+  <body>
+    <h1>Vue.js</h1>
+    <div id="app">
+      <hello />
+    </div>
+
+    <!-- v-on:イベント関係の属性をバインドする -->
+    <script>
+      var hello = Vue.component('hello',
+      {
+        data: () => {
+          return {
+            counter: 0
+          }
+        },
+        template: '<p v-on:click="counter++;" class="hello">clicked: {{counter}}.</p>',
+      })
+
+      var app = new Vue({
+        el: '#app',
+      });
+    </script>
+  </body>
+</html>

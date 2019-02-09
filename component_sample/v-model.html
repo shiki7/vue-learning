@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My first Vue</title>
+    <script src="https://unpkg.com/vue"></script>
+  </head>
+  <body>
+    <h1>Vue.js</h1>
+    <div id="app">
+      <template><hello v-bind:name="name" /></template>
+      <!-- v-modelで入力した値をbindさせる -->
+      <template><input type="text" v-model="name"></div></template>
+    </div>
+
+    <script>
+      var hello = Vue.component('hello',
+      {
+        props:['name'],
+        template: '<p class="hello">Hello,{{name}}!</p>',
+      })
+
+      var app = new Vue({
+        el: '#app',
+        data: {
+          name: ''
+        }
+      });
+    </script>
+  </body>
+</html>
