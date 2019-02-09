@@ -2,3 +2,8 @@
 v-bind
 v-if, v-for
 template
+component
+props
+v-model
+v-on
+method property
