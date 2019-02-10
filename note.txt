@@ -4,6 +4,14 @@ v-if, v-for
 template
 component
 props
-v-model
-v-on
+v-model inputした値を変数にバインド
+v-on　イベントをバインド
 method property
+computed 計算できるプロパティ
+
+イベントはイベントが発生したタイミングで発火
+computedは値が変更されたタイミング
+
+
+Vue.component グローバルコンポーネント
+components ローカル
