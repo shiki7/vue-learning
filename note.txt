@@ -15,3 +15,5 @@ computedは値が変更されたタイミング
 
 Vue.component グローバルコンポーネント
 components ローカル
+
+$emit 子コンポーネントから親コンポーネントに値を渡す
