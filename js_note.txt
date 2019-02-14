@@ -1,0 +1,12 @@
+
+## 読んだ資料のメモ
+
+### JavaScriptの歴史
+https://qiita.com/a_rcsin/items/0a3c8c98c8d703c49a22
+
+### ES6
+https://qiita.com/soarflat/items/b251caf9cb59b72beb9b
+
+### node.js
+node.jsとはなにか
+http://d.hatena.ne.jp/badatmath/20101020/1287587240

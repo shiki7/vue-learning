@@ -17,3 +17,12 @@ Vue.component グローバルコンポーネント
 components ローカル
 
 $emit 子コンポーネントから親コンポーネントに値を渡す
+
+created 初期化
+localStorage.setItem, getItem
+
+validator
+
+computed:  get, set
+
+watch 監視プロパティ。1つの値を操作することで複数の値を一斉に更新。
