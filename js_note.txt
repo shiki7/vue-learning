@@ -1,5 +1,7 @@
 
 ## 読んだ資料のメモ
+[TODO] jsについてなので、あとでリポジトリ移動させる
+
 
 ### JavaScriptの歴史
 https://qiita.com/a_rcsin/items/0a3c8c98c8d703c49a22
