@@ -26,3 +26,7 @@ validator
 computed:  get, set
 
 watch 監視プロパティ。1つの値を操作することで複数の値を一斉に更新。
+
+slot 子コンポーネントに表示する内容を親コンポーネント側で用意できる
+
+transition v-ifと組み合わせて画面のon,off切り替え
