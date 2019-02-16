@@ -20,3 +20,6 @@ $ vue create [プロジェクト名]
 ```
 $ yarn serve
 ```
+
+### Nuxt.js install
+$ yarn global add nuxt
