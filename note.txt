@@ -37,3 +37,22 @@ Nuxt.js
 プロジェクトビルド機能
 
 [MEMO]親階層にpackage.jsonがあるとyarnコマンドでエラーが出るので、消しておく
+
+Vuex　状態管理
+mutations Storeの状態変更　$store.commit('hoge')
+@click と v-on:clickは同じ
+
+WARN対応
+```
+ WARN  Classic mode for store/ is deprecated and will be removed in Nuxt 3. 
+````
+クラシックモード→　モジュールモード
+https://ja.nuxtjs.org/guide/vuex-store/
+
+vuex-persistedstate 
+ページをリロードしても値を保持できる。標準で用意されていないのでインストールする.
+ローカルストレージなので、SSRでは動作しない。
+
+nuxt.config.jsの設定
+mode: 'universal'    サーバ、クライアント両方
+mode: 'spa'          クライアントのみ
