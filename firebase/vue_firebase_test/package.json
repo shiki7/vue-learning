@@ -2,7 +2,7 @@
   "name": "vue_firebase_test",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "shiki7 <bitbite8@gmail.com>",
+  "author": "shiki7",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
