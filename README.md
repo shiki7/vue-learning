@@ -50,4 +50,6 @@ $ npx create-nuxt-app プロジェクト名
 ```
 
 ### prettier
+```
 $ yarn global add prettier
+```
